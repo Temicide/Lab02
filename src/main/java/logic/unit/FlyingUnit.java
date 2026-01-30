@@ -1,4 +1,4 @@
-package unit;
+package logic.unit;
 
 public class FlyingUnit extends BaseUnit{
     public FlyingUnit(int startColumn, int startRow, boolean isWhite, String name) {
