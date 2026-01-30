@@ -13,19 +13,19 @@ public class FlyingUnit extends BaseUnit{
 
         if (direction == 0) {
             if (super.getRow() >= 3) return false;
-            super.setRow(super.getRow() + 1);
+            super.setRow(super.getRow() + 2);
         }
         else if (direction == 1) {
             if (super.getColumn() >= 3) return false;
-            super.setColumn(super.getColumn() + 1);
+            super.setColumn(super.getColumn() + 2);
         }
         else if (direction == 2) {
             if (super.getRow() <= 1) return false;
-            super.setRow(super.getRow() - 1);
+            super.setRow(super.getRow() - 2);
         }
         else {
             if (super.getColumn() <= 1) return false;
-            super.setColumn(super.getColumn() - 1);
+            super.setColumn(super.getColumn() - 2);
         }
 
         return true;

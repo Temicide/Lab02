@@ -98,11 +98,18 @@ public class BaseUnit {
             int targetRow = piece.getRow();
             int targetColumn = piece.getColumn();
 
-            if (this.column == targetColumn && this.row == targetRow) {
+            if (this.column == targetColumn && this.row == targetRow && !piece.isFlying()) {
                 System.out.println(this.getName() + " attacks " + piece.getName());
                 piece.setHp(piece.getHp() - this.power);
             }
         }
     }
 
+    public int getPower() {
+        return power;
+    }
+
+    public boolean isFlying() {
+        return isFlying;
+    }
 }
